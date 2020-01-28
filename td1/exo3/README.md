@@ -1,3 +1,7 @@
+# Question 3
+**REMARQUE** : Déclarer une propriété dans le corps du constructeur ne marche que pour les types primitifs non constants.
+On n'a pas fait de new => Pas besoin de delete
+
 ## Incrémentation de pointeurs
 
 ## En assembleur (en assembleur)
@@ -10,7 +14,6 @@ L'adresse d'un élément d'indice `i` est donc : `B + i * n`
 
 ## En C++
 Pas besoin de multiplier par n, connaissant le type de la donnée, le compilateur multiplie par le nombre d'octet de chaque élément lui même lors de l'incrémetation du pointeur.
-
 
 ## Arithmétique des pointeurs
 ### Adresse de la première case d'un tableau
