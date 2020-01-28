@@ -16,14 +16,18 @@ void Pile::push(std::string valeur) {
     ++pLibre;
 }
 bool Pile::empty() const {
-    return pLibre == &elements[0];
+    return pLibre == elements;
 }
 bool Pile::full() const {
-    return pLibre == &elements[9];
+    return pLibre == &elements[9]; // équivalent elem+10
 }
 void Pile::pop() {
     --pLibre;
 }
+int Pile::size() {
+    return pLibre - elem;
+}
+
 
 /**
  * @pre !empty
