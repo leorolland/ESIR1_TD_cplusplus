@@ -1,7 +1,7 @@
 // constructeur
 // On peut aussi écrire caseLibre(elements)  
 Pile::Pile(): 
-pLibre(&elements[0]) // ou pLibre(elements)
+p_sommet(elements-1) // ou pLibre(elements)
 {
 
 }
@@ -12,26 +12,24 @@ pLibre(&elements[0]) // ou pLibre(elements)
  */
 void Pile::push(std::string valeur) {
     assert(!full());
-    *pLibre = valeur;
-    ++pLibre;
+    ++p_sommet;
+    *p_sommet = valeur;
 }
 bool Pile::empty() const {
-    return pLibre == elements;
+    return p_sommet == elements-1;
 }
 bool Pile::full() const {
-    return pLibre == elements+10;
+    return p_sommet == elem+9;
 }
 void Pile::pop() {
-    --pLibre;
+    --p_sommet;
 }
 int Pile::size() {
-    return pLibre - elements;
+    return pLibre - elements + 1;
 }
-
-
 /**
  * @pre !empty
  */
 std::string Pile::top() const {
-    return *(pLibre - 1);
+    return *p_sommet;
 }
