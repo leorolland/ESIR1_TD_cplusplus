@@ -3,9 +3,9 @@
 class Pile {
     public:
         Pile(const unsigned int capa=10); // Valeur par défaut à ne pas recopier dans l'implémentation
-        void push(std::string valeur);
+        void push(std::string & valeur);
         void pop();
-        std::string top() const;
+        std::string & top() const;
         bool empty() const;
         bool full() const;
         ~Pile();

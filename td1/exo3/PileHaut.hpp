@@ -1,15 +1,15 @@
 #include <string>
 
-class Pile {
+class PileHaut {
     public:
-        Pile();
+        PileHaut();
         void push(std::string valeur);
         void pop();
         std::string top() const;
         bool empty() const;
         bool full() const;
-        ~Pile();
+        ~PileHaut();
     private:
+        std::string * caseLibre; // pointeur sommet
         std::string elements[10];
-        pLibre;
 };

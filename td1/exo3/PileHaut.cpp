@@ -1,6 +1,6 @@
 // constructeur
 // On peut aussi écrire caseLibre(elements)  
-Pile::Pile(): 
+PileHaut::PileHaut(): 
 p_sommet(elements-1) // ou pLibre(elements)
 {
 
