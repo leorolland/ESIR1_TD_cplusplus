@@ -13,5 +13,5 @@ class Pile {
         std::string * const pelem; // On n'est pas censé changer ce pointeur après initialisation
         // Lire "pelem est un constant pointeur vers une chaine"
         const unsigned int capacite;
-        std::string * plibre; // pointeur sommet
+        std::string * pLibre; // pointeur sommet
 };

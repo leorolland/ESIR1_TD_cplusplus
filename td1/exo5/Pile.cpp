@@ -1,11 +1,11 @@
+#include "Pile.hpp"
+
 // constructeur
 // On peut aussi écrire caseLibre(elements)  
 Pile::Pile(const unsigned int capa): // A faire dans le même ordre que le header
 pelem(new std::string[capa]),
 capacite(capa),
-plibre(pelem)
-{
-}
+pLibre(pelem) {}
 
 /**
  * Push
@@ -23,13 +23,12 @@ bool Pile::empty() const {
     return pLibre == pelem;
 }
 bool Pile::full() const {
-    return pLibre == elements+capa;
+    return pLibre == pelem+capacite;
     // ou plibre == &elements[capa]
 }
 Pile::~Pile() {
     delete[] pelem; // Important pour désallouer la mémoire du tableau alloué dynamiquement.
 }
-
 /**
  * @pre !empty
  */

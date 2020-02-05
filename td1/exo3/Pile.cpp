@@ -1,3 +1,5 @@
+#include "Pile.hpp"
+
 // constructeur
 // On peut aussi écrire caseLibre(elements)  
 Pile::Pile(): 

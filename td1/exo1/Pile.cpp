@@ -1,3 +1,5 @@
+#include "Pile.hpp"
+
 // constructeur
 Pile::Pile(): 
 sommet(-1) 

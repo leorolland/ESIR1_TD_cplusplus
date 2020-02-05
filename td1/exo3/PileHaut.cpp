@@ -1,3 +1,5 @@
+#include "PileHaut.hpp"
+
 // constructeur
 // On peut aussi écrire caseLibre(elements)  
 PileHaut::PileHaut(): 
