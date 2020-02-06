@@ -1,5 +1,5 @@
 # Question 8
-Chaque élément de la pile possède un pointeur vers l'élément suivant de la pile (chaînage) 
+Chaque élément de la pile possède un pointeur vers l'élément précédent de la pile (chaînage) 
 Un chaînon est formé de (Valeur, Pointeur)
 
 On va créer une chaîne interne à la classe Pile "Chaînon".
